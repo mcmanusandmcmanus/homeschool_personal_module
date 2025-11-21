@@ -1,7 +1,9 @@
 # Render blueprint for the Kind Chore Tracker static site
+# Render Blueprint for the Kind Chore Tracker static site
 services:
-  - type: static_site
+  - type: web
     name: homeschool_personal_module
+    runtime: static
     rootDir: kind-chore-tracker
     buildCommand: npm ci && npm run build
     staticPublishPath: dist
